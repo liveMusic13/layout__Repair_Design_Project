@@ -1,0 +1,35 @@
+.footer {
+  background-color: $black;
+
+  @media (max-width: 375px) {
+    display: none;
+  }
+}
+
+.footer__container {
+  min-height: 133px;
+}
+
+.footer__menu {
+  min-height: 133px;
+}
+
+.menu {}
+
+.menu__name-logo {}
+
+.menu__body {}
+
+.menu__list {}
+
+.menu__item {}
+
+.menu__link {}
+
+.menu__link_gold {}
+
+.menu__block-phone {}
+
+.menu__phone {}
+
+.menu__button {}

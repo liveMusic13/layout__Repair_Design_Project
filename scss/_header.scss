@@ -1,0 +1,153 @@
+.header {
+  background-color: $black;
+
+  @media (max-width: 1087px) {
+    max-width: 970px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 991.98px) {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 767.98px) {
+    max-width: none;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 375px) {
+    max-width: none;
+    margin: 0 auto;
+  }
+}
+
+.header__container {
+  min-height: 80px;
+
+  @media (max-width: 375px) {
+    min-height: 57px;
+  }
+}
+
+.header__menu {}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+
+  @media (max-width: 375px) {
+    min-height: 57px;
+  }
+}
+
+.menu__name-logo {
+  color: $gold;
+  @include font-size(11px, 11, 15);
+}
+
+.menu__body {
+  margin-left: 95px;
+  margin-right: 65px;
+
+  @media (max-width: 1087px) {
+    margin-left: 75px;
+    margin-right: 45px;
+  }
+
+  @media (max-width: 991.98px) {
+    margin-left: 65px;
+    margin-right: 35px;
+  }
+
+  @media (max-width: 767.98px) {
+    margin-left: 45px;
+    margin-right: 15px;
+  }
+
+  @media (max-width: 375px) {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 47px;
+
+  @media (max-width: 1087px) {
+    gap: 37px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 991.98px) {
+    gap: 27px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 767.98px) {
+    gap: 17px;
+    flex-wrap: wrap;
+  }
+}
+
+.menu__item {}
+
+.menu__link {
+  color: $white;
+  @include font-size(11px, 11, 15);
+
+  &:hover {
+    color: $gold;
+  }
+}
+
+.menu__link_gold {
+  color: $gold;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.menu__block-phone {}
+
+.menu__phone {
+  color: $gold;
+  text-decoration: underline;
+  @include font-size(11px, 11, 15);
+
+  @media (max-width: 375px) {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.menu__button {
+  width: 160px;
+  height: 35px;
+  margin-left: 45px;
+  @include font-size(11px, 11, 15);
+  font-style: italic;
+  color: $white;
+  background-color: $gold;
+  border-radius: 2px;
+
+  @media (max-width: 1087px) {
+    margin-left: 35px;
+  }
+
+  @media (max-width: 991.98px) {
+    margin-left: 25px;
+  }
+
+  @media (max-width: 767.98px) {
+    margin-left: 5px;
+  }
+
+  @media (max-width: 375px) {
+    display: none;
+  }
+}
